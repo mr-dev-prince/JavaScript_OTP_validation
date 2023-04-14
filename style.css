@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #065c78;
+}
+
+header {
+  height: 10vh;
+  width: 100%;
+  /* outline: 2px dashed red; */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.verificationForm {
+  height: 80vh;
+  width: 30%;
+  box-shadow: 0 0 15px #00ff1e;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 20px;
+  border-radius: 1rem;
+  color: white;
+}
+
+.verificationForm .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00ff1e;
+}
+
+.icon ion-icon {
+  font-size: 9rem;
+}
+
+.verificationForm .inputBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  height: 7rem;
+  width: 100%;
+  padding: 5px 10px;
+  margin-top: 5rem;
+  
+}
+
+.verificationForm .inputBox input {
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 3rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 5px #ccf6f5;
+  background: #fff;
+  text-align: center;
+  font-weight: bolder;
+  color: #00ff1e;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+
+button {
+  height: 4rem;
+  width: 15rem;
+  margin: 4rem 5rem;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  font-weight: 600;
+  border-radius: 0.2rem;
+  transition: 0.2s;
+  opacity: .5;
+}
+
+/* .buttonClass button:hover {
+  background: #00ff1e;
+} */
+
+.active{
+    opacity: 1;
+    color: #00ff1e;
+    /* box-shadow: 0 0 10px #00ff1e; */
+}
