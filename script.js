@@ -1,7 +1,32 @@
+// generating random number 
+
+// const genOtp = (otpLength)=>{
+//   otp ="";
+
+//   for(let i; i<otpLength; i++){
+//     otp += Math.floor(Math.random()*10);
+//   };
+
+//   return Number(otp);
+// }
+
+const  genOtp = (otpLength)=> {
+  otp ="";
+
+  for(let i = 0; i<otpLength ; i++){
+    otp+= Math.floor(Math.random()*10);
+  }
+
+  return Number(otp);
+}
+
+console.log("generated otp - " , genOtp(6));
+
+
 const inputs = document.querySelectorAll("input"),
   buttons = document.querySelector("button");
 
-console.log(inputs);
+// console.log(inputs);
 
 // focus on first input box on reload
 window.addEventListener("load", () => inputs[0].focus());
